@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+
+.encabezado {
+    width: 100%;
+    background-color: #f6f1e7;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-superior {
+    background-color: #3e2c23;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.iconos-barra {
+    display: flex;
+    gap: 20px;
+}
+
+.iconos-barra img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.contenedor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #f6f1e7;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #693e2e;
+    width: 25%;
+    text-align: center;
+    font-family: 'Colvetica';
+}
+
+.navegacion {
+    width: 80%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu {
+    color: #3e2c23;
+    font-weight: bold;
+
+}
+
+a {
+    text-decoration: none;
+    color: #693e2e;
+}
+
+/* Seccion-Principal */
+
+.seccion-principal {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./imagenes/imagen-fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-superior {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    padding-left: 40px;
+}
+
+.titulo-principal {
+    font-family: 'Colvetica';
+    font-size: 4rem;
+
+}
+
+.descripcion {
+    font-family: 'Roboto-Regular';
+    font-size: 1.2rem;
+}
+
+.boton-pedir {
+    font-family: 'Roboto-Regular';
+    background-color: #c58b5c;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1rem;
+    width: 180px;
+    height: 45px;
+}
+
+.seccion-oferta {
+  width: 100%;
+  background-color: #f3eadf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 280px;
+  flex-wrap: wrap;
+}
+
+/* Circulos */
+
+.circulo-oferta {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #3e2c23;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.icono-circulo {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: -40px;
+  right: 50%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Bebidas Destacadas */
+
+.text-circulo {
+  font-family: 'Colvetica';
+  font-size: 2rem;
+}
+
+.text-circulo-2 {
+  font-family: 'Colvetica';
+  font-size: 1.5rem;
+}
+
+.contenido-oferta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  row-gap: 15px;
+}
+
+.titulo-oferta {
+  font-family: 'Colvetica';
+  font-size: 2rem;
+  color: #3e2c23;
+}
+
+.descripcion-oferta {
+  font-family: 'Roboto-Regular';
+  font-size: 1rem;
+  color: #3e2c23;
+}
+
+/* Seccion Bebidas */
+
+.seccion-bebidas {
+  width: 100%;
+  background-color: #f3eadf;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.tarjeta-bebida {
+  width: 210px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px #0000001a;
+  border-radius: 10px;
+}
+
+.tarjeta-bebida img {
+  width: 100%;
+  height: 150px;
+}
+
+.titulo-bebida {
+  font-family: 'Colvetica';
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #3e2c23;
+  text-align: center;
+}
+
+.descripcion-bebida {
+  font-family: 'Roboto-Regular';
+  font-size: 0.95rem;
+  text-align: center;
+  color: #5a4c40;
+}
+
+.boton-bebida {
+  font-family: 'Roboto-Regular';
+  background-color: #c58b5c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  height: 35px;
+  width: 130px;
+}
+
+
+/* Tipografías */
+
+@font-face {
+    font-family: 'Colvetica';
+    src: url(./fuentes/Coolvetica\ Rg.otf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(./fuentes/Roboto-Regular.ttf);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+  .barra-superior {
+    justify-content: center;
+  }
+
+  .iconos-barra {
+    gap: 50px;
+  }
+
+  .contenedor-header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .navegacion {
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .menu {
+    font-size: 1.1rem;
+  }
+
+  .contenido-oferta {
+    width: 90%;
+  }
+
+  .tarjeta-bebida {
+    width: 50%;
+  }
+}
+
+
