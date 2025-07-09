@@ -202,11 +202,13 @@ a {
   align-items: center;
   box-shadow: 5px #0000001a;
   border-radius: 10px;
+  gap: 12px;
 }
 
 .tarjeta-bebida img {
   width: 100%;
-  height: 150px;
+  height: 220px;
+  border-radius: 10px;
 }
 
 .titulo-bebida {
@@ -220,20 +222,113 @@ a {
 .descripcion-bebida {
   font-family: 'Roboto-Regular';
   font-size: 0.95rem;
-  text-align: center;
+  text-align: left;
   color: #5a4c40;
 }
 
 .boton-bebida {
-  font-family: 'Roboto-Regular';
+  font-family: 'Colvetica';
   background-color: #c58b5c;
   color: white;
   border: none;
   border-radius: 10px;
   font-size: 15px;
-  height: 35px;
-  width: 130px;
+  height: 40px;
+  width: 200px;
 }
+
+.seccion-final {
+  width: 100%;
+  background-color: #f3eadf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fila-imagenes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.fila-imagenes img {
+  width: 32%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.banner-inferior {
+  width: 70%;
+  height: 80px;
+  background-color: #f1e6d8;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  top: -20px;
+}
+
+.texto-promocion {
+  font-family: 'Colvetica';
+  font-size: 1.5rem;
+  color: #3e2c23;
+  width: 70%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.boton-banner {
+  font-family: 'Colvetica';
+  background-color: #c58b5c;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  height: 80px;
+  width: 50%;
+  margin-right: 20px;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+  right: -20px;
+}
+
+.pie-pagina {
+  background-color: #3e2c23;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding-bottom: 20px;
+}
+
+.columna-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 20px;
+
+}
+
+.titulo-footer {
+  font-family: 'Colvetica';
+  font-size: 1.2rem;
+}
+
+.columna-footer p {
+  font-family: 'Roboto-Regular';
+  font-size: 0.95rem;
+}
+
 
 
 /* Tipografías */
@@ -286,11 +381,50 @@ a {
 
   .contenido-oferta {
     width: 90%;
+    margin-top: 50px;
   }
 
   .tarjeta-bebida {
     width: 50%;
   }
+
+  .seccion-oferta {
+    padding-bottom: 150px;
+  }
+
+   .banner-inferior {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  
+  }
+
+   .fila-imagenes img {
+    width: 100%;
+}
+
+  .texto-promocion {
+    width: 90%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .boton-banner {
+    margin-right: 0;
+    border-radius: 20px;
+  }
+
+    .contenedor-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columna-footer {
+    align-items: center;
+    text-align: center;
+  }
+
 }
 
 
